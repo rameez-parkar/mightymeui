@@ -1,0 +1,22 @@
+<div class="date-selector-container">
+    <div class="content">
+        <div class="header">
+            <p class="title">Recent Booking Schedule</p>
+            <div class="month-section">
+                <i class="bi bi-chevron-left month-navigator" (click)="previousMonth()"></i>
+                <span class="month">{{ date.format('MMMM') }} {{ date.format('YYYY') }}</span>
+                <i class="bi bi-chevron-right month-navigator" (click)="nextMonth()"></i>
+            </div>
+        </div>
+        <div class="calendar-grid days">
+            <div *ngFor="let day of daysArr">{{ day }}</div>
+        </div>
+        <div class="calendar-grid dates">
+            <div *ngFor="let date of datesArr">
+                <div (click)="onSelectDate(date)" class="date" [ngClass]="{'selected-date':isSelected(date), 'invalid-date':!isDateSelectable(date), 'valid-date':isDateSelectable(date)}">
+                    {{ date?.date() }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
