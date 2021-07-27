@@ -8,7 +8,7 @@ import * as moment from 'moment';
 })
 export class DateSelectorComponent implements OnInit {
   @Input() selectedDate;
-  date = moment();
+  date = moment('11/01/2021', 'MM/DD/YYYY');
   datesArr = [];
   daysArr = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   constructor() { }
@@ -61,7 +61,7 @@ export class DateSelectorComponent implements OnInit {
   }
 
   isDateSelectable(selectedDate) {
-    if (moment(selectedDate).isBefore(moment())) {
+    if (moment(selectedDate).isBefore(moment()) || moment(selectedDate).isBefore(moment('11/01/2021', 'MM/DD/YYYY'))) {
       return false;
     }
     return true;
