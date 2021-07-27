@@ -1,4 +1,10 @@
 <div class="page">
-  <app-date-selector></app-date-selector>
-  <app-time-selector></app-time-selector>
+  <div class="booking">
+    <app-date-selector></app-date-selector>
+    <app-time-selector></app-time-selector>
+  </div>
+  <div class="analysis">
+    <app-seats-availability [value]="683" [total]="839" [type]="'Available'"></app-seats-availability>
+    <app-seats-availability [value]="156" [total]="839" [type]="'Booked'"></app-seats-availability>
+  </div>
 </div>

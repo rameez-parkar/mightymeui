@@ -17,7 +17,7 @@
         .time-slots {
             margin-top: 58px;
             display: grid;
-            grid-template-columns: auto auto auto auto auto;
+            grid-template-columns: repeat(5, auto);
             gap: 18px 9px;
     
             .time-option {
