@@ -22,4 +22,9 @@ describe('TimeSelectorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should select a different time slot on clicking new time option', () => {
+    component.onTimeOptionClick(4);
+    expect(component.selectedTime).toEqual(4);
+  });
 });

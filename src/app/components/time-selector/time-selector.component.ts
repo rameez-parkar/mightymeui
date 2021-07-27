@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./time-selector.component.scss']
 })
 export class TimeSelectorComponent implements OnInit {
-  @Input() selectedTime = 2;
+  @Input() selectedTime;
   @Input() timeOptions = [
     "08:00 AM",
     "09:00 AM",
