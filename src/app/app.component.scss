@@ -1,0 +1,25 @@
+.page {
+    background: #E9F7F9 0% 0% no-repeat padding-box;
+    height: 100vh;
+    padding: 40px;
+
+    .booking {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .analysis {
+        margin-top: 50px;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+app-date-selector, app-time-selector {
+    width: 45vw;
+}
+
+app-seats-availability {
+    width: 22vw;
+}

@@ -1,0 +1,45 @@
+.time-selector-container {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.4rem 0.4rem #00000005;
+    padding: 2.77vh 1.56vw;
+
+    .content {
+        .header {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            color: #393939;
+            font-weight: 600;
+            margin: 0;
+        }
+    
+        .time-slots {
+            margin-top: 5.37vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+            gap: 1.67vh 0.47vw;
+    
+            .time-option {
+                border: 0.2rem solid #30B34B;
+                border-radius: 2.5rem;
+                padding: 1.1vh 0.625vw;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+                font-size: 1.2rem;
+            }
+    
+            .unselected-time {
+                color: #30B34B;
+                background-color: white;
+                font-weight: 400;
+            }
+    
+            .selected-time {
+                color: #FFFFFF;
+                background-color: #30B34B;
+                font-weight: 500;
+            }
+        }
+    }    
+}

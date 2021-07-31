@@ -1,0 +1,8 @@
+<div class="time-selector-container">
+    <div class="content">
+        <p class="header">Select Appointment Time</p>
+        <div class="time-slots">
+            <button *ngFor="let time of timeOptions; let i = index" class="time-option" [ngClass]="selectedTime === i ? 'selected-time' : 'unselected-time'" (click)="onTimeOptionClick(i)">{{ time }}</button>
+        </div>
+    </div>
+</div>

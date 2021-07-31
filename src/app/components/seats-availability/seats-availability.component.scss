@@ -1,0 +1,38 @@
+.seat-availability-container {
+    background: #30B34B 0% 0% no-repeat padding-box;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.4rem 0.4rem #00000005;
+    padding: 2.77vh 1.56vw;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.76vh;
+        .title {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin: 0;
+        }
+        .value {
+            font-size: 2rem;
+            font-weight: 600;
+            margin: 0;
+        }
+    }
+
+    .full-bar {
+        height: 1.2vh;
+        border-radius: 2rem;
+        background-color:#FFFFFF33;
+
+        .filled-bar {
+            height: 1.2vh;
+            background-color:#FFFFFF;
+            border-radius: 2rem;
+        }
+    }
+}

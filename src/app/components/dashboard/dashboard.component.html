@@ -1,0 +1,33 @@
+<div class="grid-container">
+  <div class="container-fluid">
+    <div class="row pt-xl-11">
+      <div class="col-12 col-sm-12 col-xl-6 pt-4 pt-sm-4 p-xl-0">
+        <div class="ml-xl-6 mr-xl-12">
+          <app-date-selector></app-date-selector>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-xl-6 pt-4 pt-sm-4 p-xl-0">
+        <div class="ml-xl-12 mr-xl-6">
+          <app-time-selector></app-time-selector>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-xl-7">
+      <div class="col-12 col-sm-12 col-lg-6 col-xl-3 pt-4 pt-sm-4 p-xl-0">
+        <div class="ml-xl-6 mr-xl-12">
+          <app-seats-availability [value]="683" [total]="839" [type]="'Available'"></app-seats-availability>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-6 col-xl-3 pt-4 pt-sm-4 p-xl-0">
+        <div class="ml-xl-12 mr-xl-12">
+          <app-seats-availability [value]="156" [total]="839" [type]="'Booked'"></app-seats-availability>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 offset-xl-9">
+        <button class="continue-button">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>

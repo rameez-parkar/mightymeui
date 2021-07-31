@@ -1,0 +1,87 @@
+.sidenav-container {
+  background: #E9F7F9 0% 0% no-repeat padding-box;
+  height: 100%;
+}
+
+.sidenav {
+  padding: 2.75vh 0 5.5vh 0;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1.3rem 0.3rem 4rem #00000005;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  font: normal normal bold 4.2rem/5.5rem Montserrat;
+  letter-spacing: 0;
+  color: #30B34B;
+  padding: 0 2.34vw;
+  margin-bottom: 5.1vh;
+}
+
+mat-nav-list a {
+  letter-spacing: 0;
+  padding: 0 2.86vw 0 0;
+}
+
+.inactive-link {
+  font: normal normal normal 1.8rem/2.7rem Poppins;
+  color: #799283;
+}
+
+.active-link {
+  font: normal normal 600 1.8rem/2.7rem Poppins;
+  color: #30B34B;
+}
+
+.active-route {
+  position: absolute;
+  width: 0.8rem;
+  height: 100%;
+  background: #30B34B 0% 0% no-repeat padding-box;
+  border-radius: 0rem 0.6rem 0.6rem 0rem;
+  left: 0;
+}
+
+.route-text {
+  padding-left: 2.86vw;
+}
+
+.toolbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 2.75vh;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1rem 1rem 1rem #00000005;
+}
+
+.toolbar {
+  padding: 0;
+  background-color: #FFFFFF;
+  height: 5.6vh;
+}
+
+.toolbar-content {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  display: flex;
+
+  .nav-drawer {
+    color: #000000;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .dashboard-title {
+    font-size: 2.8rem;
+    color: #262626;
+    margin-left: 2.6vw;
+    text-align: left;
+  }
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
