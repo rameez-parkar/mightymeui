@@ -1,33 +1,32 @@
 .time-selector-container {
-    //width: 40%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px #00000005;
-    padding: 30px;
+    border-radius: 2rem;
+    box-shadow: 0rem 0.4rem 0.4rem #00000005;
+    padding: 2.77vh 1.56vw;
 
     .content {
         .header {
             font-family: 'Poppins', sans-serif;
-            font-size: 20px;
+            font-size: 2rem;
             color: #393939;
             font-weight: 600;
             margin: 0;
         }
     
         .time-slots {
-            margin-top: 58px;
+            margin-top: 5.37vh;
             display: grid;
-            grid-template-columns: repeat(5, auto);
-            gap: 18px 9px;
+            grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+            gap: 1.67vh 0.47vw;
     
             .time-option {
-                border: 2px solid #30B34B;
-                border-radius: 25px;
-                padding: 12px 12px;
+                border: 0.2rem solid #30B34B;
+                border-radius: 2.5rem;
+                padding: 1.1vh 0.625vw;
                 text-align: center;
                 font-family: 'Montserrat', sans-serif;
                 cursor: pointer;
-                font-size: 12px;
+                font-size: 1.2rem;
             }
     
             .unselected-time {

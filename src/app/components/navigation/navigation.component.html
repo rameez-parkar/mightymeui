@@ -1,0 +1,26 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>MIGHTY ME</mat-toolbar>
+    <mat-nav-list>
+      <a *ngFor="let route of routes" mat-list-item (click)="onNavigate(route?.path)" [ngClass]="tempRoute === route?.path ? 'active-link' : 'inactive-link'">
+        <div [ngClass]="{'active-route': tempRoute === route?.path}"></div>
+        <span class="route-text">{{ route?.text }}</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="toolbar-container">
+      <mat-toolbar class="toolbar">
+          <div fxFlex class="toolbar-content">
+            <i class="bi bi-list nav-drawer" (click)="drawer.toggle()"></i>
+            <div class="dashboard-title">Dashboard</div>
+          </div>
+      </mat-toolbar>
+    </div>
+    <!-- Add Content Here -->
+    <app-dashboard></app-dashboard>
+  </mat-sidenav-content>
+</mat-sidenav-container>
